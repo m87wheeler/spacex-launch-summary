@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SpaceX Launch API</title>
+  </head>
+  <body>
+    <section id="launch-container">
+      <div id="back-to-top">TOP</div>
+    </section>
+    <section id="flight-search">
+      <div id="more-filters">More Filters</div>
+      <label class="filter-label" for="flight-name"
+        ><span>Flight Name</span
+        ><input type="text" name="flight-name" id="flight-name"
+      /></label>
+      <label class="filter-label" for="flight-number"
+        ><span>Flight Number</span
+        ><input type="number" name="flight-number" id="flight-number"
+      /></label>
+      <div class="status-filter success-status">
+        <p>Success Status</p>
+        <label for="unsuccessful"
+          ><span>Unsuccessful</span>
+          <input type="radio" name="success-status" value="successful" />
+        </label>
+        <label for="successful"
+          ><span>Successful</span>
+          <input type="radio" name="success-status" value="unsuccessful"
+        /></label>
+        <label for="all">
+          <span>All</span>
+          <input type="radio" name="success-status" value="all" checked />
+        </label>
+      </div>
+
+      <div class="status-filter crew-status">
+        <p>Crew Status</p>
+        <label for="unmanned"
+          ><span>Unmanned</span>
+          <input type="radio" name="success-status" value="unmanned" />
+        </label>
+        <label for="manned"
+          ><span>Manned</span>
+          <input type="radio" name="success-status" value="manned"
+        /></label>
+        <label for="all">
+          <span>All</span>
+          <input type="radio" name="success-status" value="all" checked />
+        </label>
+      </div>
+    </section>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
